@@ -242,13 +242,17 @@ img { max-width: 100%; height: auto; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
+  align-items: stretch;
 }
 .province-card {
   background: #fff;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .province-card:hover {
   transform: translateY(-5px);
@@ -259,6 +263,8 @@ img { max-width: 100%; height: auto; }
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
 }
 .card-image span {
   font-size: 1.5rem;
@@ -266,7 +272,8 @@ img { max-width: 100%; height: auto; }
   color: #fff;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
-.card-content { padding: 20px; }
+.card-content { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+.card-content p { flex: 1; }
 .card-content h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
@@ -375,13 +382,17 @@ img { max-width: 100%; height: auto; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
+  align-items: stretch;
 }
 .city-card {
   background: #fff;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .city-card:hover {
   transform: translateY(-5px);
@@ -392,6 +403,8 @@ img { max-width: 100%; height: auto; }
   display: flex;
   align-items: flex-end;
   padding: 15px;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
 }
 .city-card .card-image span {
   font-size: 1.2rem;
@@ -617,13 +630,17 @@ img { max-width: 100%; height: auto; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
+  align-items: stretch;
 }
 .attraction-card {
   background: #fff;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .attraction-card:hover { transform: translateY(-3px); }
 .attraction-image {
@@ -631,6 +648,7 @@ img { max-width: 100%; height: auto; }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 12px 12px 0 0;
 }
 .attraction-content { padding: 18px; }
 .attraction-content h4 {
@@ -673,9 +691,12 @@ img { max-width: 100%; height: auto; }
 .food-card {
   background: #fff;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .food-card:hover { transform: translateY(-3px); }
 .food-image {
@@ -683,6 +704,7 @@ img { max-width: 100%; height: auto; }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 12px 12px 0 0;
 }
 .food-content { padding: 18px; }
 .food-content h4 {
