@@ -961,6 +961,116 @@ img { max-width: 100%; height: auto; }
 }
 .klook-blog-cta a:hover { background: #e64a19; }
 
+/* ===== Amazon Gear Section ===== */
+.amazon-gear {
+  background: #f8f9fa;
+  padding: 60px 0;
+}
+.amazon-gear h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+.amazon-gear .section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+}
+.amazon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+.amazon-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.amazon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+.amazon-card .amazon-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.amazon-card h4 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+.amazon-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 18px;
+  flex: 1;
+}
+.amazon-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background: #232f3e;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+.amazon-btn:hover {
+  background: #ff9900;
+  color: #111;
+}
+
+/* ===== Amazon Blog CTA ===== */
+.amazon-blog-cta {
+  background: #fff;
+  border-left: 4px solid #ff9900;
+  border-radius: 8px;
+  padding: 25px 30px;
+  margin: 30px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+.amazon-blog-cta h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+.amazon-blog-cta .cta-subtitle {
+  color: #666;
+  margin-bottom: 18px;
+}
+.amazon-blog-cta ul {
+  list-style: none;
+  padding: 0;
+}
+.amazon-blog-cta ul li {
+  margin-bottom: 10px;
+}
+.amazon-blog-cta ul li a {
+  color: #c41e3a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.amazon-blog-cta ul li a:hover {
+  color: #ff9900;
+}
+.amazon-disclosure {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 15px;
+  font-style: italic;
+}
+
 /* Footer */
 .footer {
   background: #222;
