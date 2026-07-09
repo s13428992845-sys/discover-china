@@ -961,6 +961,77 @@ img { max-width: 100%; height: auto; }
 }
 .klook-blog-cta a:hover { background: #e64a19; }
 
+/* ===== Klook 3-Card Recommend Block ===== */
+.klook-recommend {
+  background: linear-gradient(135deg, #ff5722 0%, #e63946 100%);
+  border-radius: 12px;
+  padding: 30px 25px;
+  margin: 30px 0;
+  color: #fff;
+}
+.klook-recommend h3 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.klook-recommend .klook-recommend-subtitle {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.klook-recommend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.klook-recommend-card {
+  background: rgba(255,255,255,0.95);
+  border-radius: 10px;
+  padding: 18px 16px;
+  text-align: center;
+  color: #333;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.klook-recommend-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+.klook-card-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.klook-recommend-card h4 {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 5px;
+}
+.klook-recommend-card p {
+  font-size: 0.82rem;
+  color: #666;
+  margin-bottom: 14px;
+  flex: 1;
+  line-height: 1.4;
+}
+.klook-card-btn {
+  display: inline-block;
+  padding: 8px 22px;
+  background: #ff5722;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: background 0.2s;
+}
+.klook-card-btn:hover {
+  background: #e64a19;
+}
+
 /* ===== Amazon Gear Section ===== */
 .amazon-gear {
   background: #f8f9fa;
